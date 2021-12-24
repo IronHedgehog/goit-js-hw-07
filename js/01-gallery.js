@@ -32,7 +32,7 @@ function onImageClick(e) {
             return;
         }  
 
-const bigImg = e.target.dataset.source
+    const bigImg = e.target.dataset.source
     const modalImg = basicLightbox.create(
         `<img width="1400" height="900" src="${bigImg}">`
     );

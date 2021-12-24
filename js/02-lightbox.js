@@ -5,7 +5,7 @@ console.log(galleryItems);
 function createImageGallery(){
     return galleryItems.map(({preview,original,description})=>{
         return `     
-<div class="gallery__item">
+<li class="gallery__item">
     <a class="gallery__link" href="${original}">
         <img
             class="gallery__image"
@@ -14,9 +14,10 @@ function createImageGallery(){
             alt="${description}"
         />
     </a>
-</div>
+</li>
         `
     }).join('')
+    
 }
 const gallery = document.querySelector('.gallery')
     
